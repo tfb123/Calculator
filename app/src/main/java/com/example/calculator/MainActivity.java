@@ -95,9 +95,11 @@ public class MainActivity extends AppCompatActivity {
                 case "-":
                     operand -=number;
                     break;
-                    //rootNumber = Math.sqrt(number);
-                    //                    number = rootNumber;
-                    //                    operand = number;
+                case "sqrt":
+                    rootNumber = Math.sqrt(number);
+                    number = rootNumber;
+                    operand = number;
+                    break;
             }
         }
         resultField.setText(operand.toString().replace('.', ','));
