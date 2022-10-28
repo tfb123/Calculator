@@ -64,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
         lastOperation = op;
         operationField.setText(lastOperation);
     }
+    public void onClearClick(View view){
+
+        resultField.setText("Cleared");
+        operationField.setText("Cleared");
+        operand = 0.0;
+    }
 
     private void performOperation(Double number, String operation){
 
